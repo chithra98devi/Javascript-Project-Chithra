@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&family=Lobster&family=Poppins:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #95a5a6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 600px;
+  height: 600px;
+  background-color: white;
+  position: relative;
+}
+
+.tool {
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px;
+}
+
+.form-group label {
+  color: white;
+}
+
+.form-group label span {
+  background-color: aliceblue;
+  color: black;
+  margin-left: 20px;
+  padding: 0px 10px;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+  font-size: 18px;
+}
+
+button {
+  height: 30px;
+  border: none;
+  background-color: green;
+  color: white;
+  padding: 5px;
+}
