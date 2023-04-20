@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&family=Lobster&family=Poppins:wght@300;400;500;700&family=Rubik:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-color: #be6db7;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  padding: 20px 20px;
+  gap: 10px;
+}
+
+.sticky {
+  height: 200px;
+  padding: 16px;
+  border: none;
+  resize: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.btn-add {
+  height: 200px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 22px;
+  background-color: #865dff;
+  cursor: pointer;
+}
+
+.btn-add:hover {
+  background-color: #810ca8;
+}
