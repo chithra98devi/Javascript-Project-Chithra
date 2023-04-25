@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&family=Lobster&family=Poppins:wght@300;400;500;700&family=Rubik:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #eff5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1100px;
+  height: 440px;
+  background-color: white;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card-left {
+  width: 600px;
+  overflow: hidden;
+  /* gap: 10px; */
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.img {
+  border: 2px solid white;
+}
+
+.active {
+  border-color: black;
+}
+
+.main-image {
+  display: flex;
+  transition: all 0.5s ease;
+}
+
+.select-image {
+  display: flex;
+  gap: 10px;
+}
+
+.card-right {
+  padding: 10px;
+}
+
+.card-right h2 {
+  font-weight: 300;
+  /* color: red; */
+}
+
+.star {
+  display: flex;
+  gap: 20px;
+}
+
+.star-group ion-icon {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.star-group ion-icon:nth-child(1),
+.star-group ion-icon:nth-child(2),
+.star-group ion-icon:nth-child(3) {
+  color: gold;
+}
+
+.card-right h4 {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.card-right h4 span {
+  text-decoration: line-through;
+  padding-left: 15px;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+}
+
+.card-right p {
+  margin: 15px 0;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+}
+
+.form {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  /* background-color: red; */
+}
+
+.form-group label,
+.form-group select {
+  display: block;
+  /* background-color: green; */
+}
+
+.form-group select {
+  width: 150px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.input-group {
+  display: flex;
+  width: 220px;
+  height: 30px;
+  /* background-color: red; */
+}
+
+.input-group input {
+  width: 50px;
+  border: 1px solid #ccc;
+  outline: none;
+  padding-left: 20px;
+  font-size: 18px;
+}
+.input-group button {
+  width: 30px;
+  outline: none;
+  border: none;
+  background-color: #111;
+  color: white;
+}
+
+.btn-add {
+  width: 150px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: #ff8401;
+  color: white;
+  font-size: 18px;
+}

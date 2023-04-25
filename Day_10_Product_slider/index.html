@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Slider</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-left">
+        <div class="main-image">
+          <img src="Images/1.jpg" alt="" />
+          <img src="Images/2.jpg" alt="" />
+          <img src="Images/3.jpg" alt="" />
+          <img src="Images/4.jpg" alt="" />
+        </div>
+        <div class="select-image">
+          <div class="img active">
+            <a href="#" data-id="1"><img src="Images/1.jpg" /></a>
+          </div>
+          <div class="img">
+            <a href="#" data-id="2"><img src="Images/2.jpg" /></a>
+          </div>
+          <div class="img">
+            <a href="#" data-id="3"><img src="Images/3.jpg" /></a>
+          </div>
+          <div class="img">
+            <a href="#" data-id="4"><img src="Images/4.jpg" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="card-right">
+        <h2>Canon EOS 1500D</h2>
+        <div class="star">
+          <div class="star-group">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </div>
+          <span>3 reviews</span>
+        </div>
+        <h4>$34.00<span>$50.00</span></h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+          sint iste. Quia necessitatibus ut minima. Dignissimos mollitia ad odio
+          neque blanditiis eaque optio, ipsa, facere quisquam, doloribus laborum
+          totam voluptatum.
+        </p>
+        <div class="form">
+          <div class="form-group">
+            <label>Color</label>
+            <select>
+              <option>Black</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Qty</label>
+            <div class="input-group">
+              <button class="minus">-</button>
+              <input type="text" value="" id="qtn" />
+              <button class="plus">+</button>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn-add">Add Cart</button>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
