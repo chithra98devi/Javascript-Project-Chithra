@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&family=Lobster&family=Poppins:wght@300;400;500;700&family=Rubik:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.type {
+  background-color: aliceblue;
+  /* height: 100px;
+  width: 250px; */
+}
+
+.star {
+  border: none;
+  background-color: unset;
+  font-size: 50px;
+  color: goldenrod;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+}
