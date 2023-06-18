@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  background-color: #ff5252;
+}
+
+.container {
+  width: 770px;
+  background-color: #fff;
+}
+
+.header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#month {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ff5252;
+}
+
+button {
+  width: 75px;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.header button {
+  background-color: #ff5252;
+}
+
+#weekdays {
+  width: 100%;
+  display: flex;
+  background-color: #2f3640;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 500;
+}
+
+#weekdays div {
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#calender {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.day {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 5px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 3px #cbd4c2;
+  color: #7f8fa6;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.day:hover {
+  background-color: rgba(112, 111, 211, 0.1);
+  color: #706fd3;
+}
+
+#currentDay {
+  background-color: #706fd3;
+  color: #fff;
+}
+
+.event {
+  font-size: 10px;
+  padding: 3px;
+  background-color: #3d3d3d;
+  color: #fff;
+  border-radius: 5px;
+  max-height: 55px;
+  overflow: hidden;
+}
+
+.event.holiday {
+  background-color: palegreen;
+  color: #3d3d3d;
+}
+
+.plain {
+  cursor: default;
+  box-shadow: none;
+}
+
+#modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#addEvent,
+#viewEvent {
+  display: none;
+  width: 350px;
+  background-color: #fff;
+  padding: 10px;
+  z-index: 20;
+  position: absolute;
+}
+
+#addEvent h2,
+#viewEvent h2 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#txtTitle {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #cbd4c2;
+  font-size: 16px;
+}
+
+#btnSave {
+  background-color: #2ed573;
+}
+
+.btnClose {
+  background-color: #2f3542;
+}
+
+#viewEvent p {
+  margin-bottom: 20px;
+}
+
+#btnDelete {
+  background-color: #ea2027;
+}
+
+.error {
+  border-color: #ea2027 !important;
+}
