@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Teko:wght@500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #b1cb8c;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 600px;
+  height: 450px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  user-select: none;
+}
+
+.img-box {
+  display: flex;
+  justify-content: center;
+}
+
+.container h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 10px;
+  position: relative;
+  padding: 5px;
+  font-family: "Teko", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.container h2 span {
+  color: #95ca61;
+  font-family: "Teko", sans-serif;
+  text-transform: uppercase;
+}
+
+.container h2::after {
+  content: "";
+  width: 150px;
+  height: 3px;
+  background-color: #2f671c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(220px);
+}
+
+.pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ece9ea;
+  position: relative;
+}
+
+.pic img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.pic::before {
+  content: "";
+  background-color: #2f671c;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+.pic::after {
+  content: "";
+  background-color: #95ca61;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+  margin-left: 20px;
+}
+
+.profile h4 {
+  font-size: 18px;
+  padding: 2px;
+  position: relative;
+}
+
+.profile h4::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #2f671c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.profile p {
+  font-size: 14px;
+}
+
+.text p {
+  padding: 30px;
+  font-size: 16px;
+  color: #222;
+}
+
+.arrow {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  top: 250px;
+  cursor: pointer;
+}
+
+.fa-chevron-circle-right {
+  right: -50px;
+}
+
+.fa-chevron-circle-left {
+  left: -50px;
+}
